@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>portfolio</title>
+  <style>
+    @font-face {
+      font-family: "jeju gothic";
+      src: url("font/제주한라산\(윈도우\).ttf");
+    }
+    body{
+      font: 20px "Montserrat", sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+    }
+    p{
+      font-size: 16px;
+    }
+    .margin {margin-bottom: 45px;}
+
+    .navbar{
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+    }
+    .navbar-nav li a:hover{color: #1abc9c !important;}
+
+    .bg-1{background-color: #1abc9c;
+      color: #fff;
+    }
+    .bg-2{background-color: #474e5d;
+      color: #fff;
+    }
+    .bg-3{background-color: #fff;
+      color: #555;
+    }
+    .bg-4{background-color: #2f2f2f;
+      color: #fff;
+    }
+    .bg-5{background-color: #ddd;
+      color: #000;
+    }
+    .container-fluid{
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+    .container-fluid h3{ font-family: "jeju gothic"; 
+     
+    }
+    .img-circle{
+      width: 350px;
+      height: 350px;
+    }
+
+    /* 그리드 레이아웃을 사용 할 때 적은 단위값 sm과 맞는 값을 사용해야 한다 */
+    @media screen and (max-width:767px){
+      #portfolio p{margin-top: 30px;}
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">HOME</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about">about 자기소개</a></li>
+          <li><a href="#portfolio">Portfolio 포트폴리오</a></li>
+          <li><a href="#contact">tel 연락처</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid bg-1 text-center">
+    <h3 class="margin">youjin Portfolio</h3>
+    <img src="img/profileshot.png" class="img-circle"  alt="새">
+    <h3>신입 개발자 박유진입니다.</h3>
+  </div>
+  <div id="about" class="container-fluid bg-2 text-center margin">
+    <h3>소개합니다.</h3>
+    <p>포트폴리오</p>
+    <a href="https://github.com/youjin119" class="btn btn-default btn-lg">my github</a>
+  </div>
+
+  <div id="portfolio" class="container-fluid bg-3 text-center margin">    
+    <h3 class="margin">포트폴리오</h3><br>
+    <div class="row">
+      <h4>Toy Project</h4>
+      <div class="col-sm-3">
+        <p>브랜드 홍보 페이지</p>
+        <img src="img/birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        <div>
+          html, css, 동영상배경, transition, animation
+        </div>
+      </div>
+      <div class="col-sm-3"> 
+        <p>쿠팡이츠 데모</p>
+        <a href="https://youjin119.github.io/project1/" target="_blank">
+          <img src="img/coupangeats.png" class="img-responsive margin" style="width:100%" alt="Image">
+        </a>
+        <div>
+          html, css, bootstrap, 반응형웹
+        </div>
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">개발내용</h4>
+            </div>
+            <div class="modal-body">
+              <p>html5, css3을 기반으로 bootstrap을 사용해서 responsive web을 구현했습니다.<br>
+                bootstrap을 사용해서 빠르게 개발할 수 있었고, media query 사용법이 중요하다는 것을 배웠습니다.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <a class="btn btn-default" href="https://pjs01.github.io/coupangeats2/" target="_blank">view</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3"> 
+        <p>자바 학사 관리 데모 mini project</p>
+        <img src="img/birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      </div>
+      <div class="col-sm-3"> 
+        <p>- final project</p>
+        <img src="img/birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      </div>
+    </div>
+  </div>
+
+
+  <div id="contact" class="container-fluid bg-5 text-center margin">
+    
+    <h3>연락처</h3>
+    <p>Discord : </p>
+    <p>E-mail : youjin3012@naver.com</p>
+    <p>SNS : </p>
+  </div>
+
+  <footer class="container-fluid bg-4 text-center">
+    &copy; All rights reservd by youjin
+    <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p>
+  </footer>
+</body>
+</html>
