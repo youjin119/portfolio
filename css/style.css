@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "jeju gothic";
+  src: url("font/제주고딕\(윈도우\).ttf");
+}
+body{
+  font: 20px "Montserrat", sans-serif;
+  line-height: 1.8;
+  color: #f5f6f7;
+}
+p{
+  font-size: 16px;
+}
+.margin {margin-bottom: 45px;}
+
+.navbar{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+.navbar-nav li a:hover{color: #1abc9c !important;}
+
+.bg-1{background-color: #1abc9c;
+  color: #fff;
+}
+.bg-2{background-color: #474e5d;
+  color: #fff;
+}
+.bg-3{background-color: #fff;
+  color: #555;
+}
+.bg-4{background-color: #2f2f2f;
+  color: #fff;
+}
+.bg-5{background-color: #ddd;
+  color: #000;
+}
+.container-fluid{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.container-fluid h3{ font-family: "jeju gothic"; 
+ 
+}
+.img-circle{
+  width: 350px;
+  height: 350px;
+}
+
+/* 이미지에 호버하면 테두리가 생기도록 만든다 */
+#portfolio .col-sm-4 a img{
+  transition: all 0.2s ease;
+}
+#portfolio .col-sm-4 a img:hover{
+  border: 2px dashed #474e5d;
+}
+#portfolio h4{
+  margin-bottom: 50px;
+}
+
+
+
+/* 그리드 레이아웃을 사용 할 때 적은 단위값 sm과 맞는 값을 사용해야 한다 */
+@media screen and (max-width:767px){
+  #portfolio p{margin-top: 30px;}
+}
