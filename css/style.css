@@ -5,7 +5,7 @@
 body{
   font: 20px "Montserrat", sans-serif;
   line-height: 1.8;
-  color: #f5f6f7;
+  color: #13678A;
 }
 p{
   font-size: 16px;
@@ -20,23 +20,25 @@ p{
   margin-bottom: 0;
   font-size: 12px;
   letter-spacing: 5px;
+  background-color: #012030;
 }
-.navbar-nav li a:hover{color: #1abc9c !important;}
+.navbar-nav li a, .navbar-brand{color: #bbb !important;}
+.navbar-nav li a:hover, .navbar-brand:hover{color: #9AEBA3 !important;}
 
-.bg-1{background-color: #1abc9c;
+.bg-1{background-color: #9AEBA3;
+  color: #012030;
+}
+.bg-2{background-color: #012030;
   color: #fff;
 }
-.bg-2{background-color: #474e5d;
+.bg-3{background-color: #DAFDBA;
+  color: #012030;
+}
+.bg-4{background-color: #012030;
   color: #fff;
 }
-.bg-3{background-color: #fff;
-  color: #555;
-}
-.bg-4{background-color: #2f2f2f;
+.bg-5{background-color: #13678A;
   color: #fff;
-}
-.bg-5{background-color: #ddd;
-  color: #000;
 }
 .container-fluid{
   padding-top: 70px;
@@ -53,9 +55,11 @@ p{
 /* 이미지에 호버하면 테두리가 생기도록 만든다 */
 #portfolio .col-sm-4 a img{
   transition: all 0.2s ease;
+  opacity: 70%;
 }
 #portfolio .col-sm-4 a img:hover{
-  border: 2px dashed #474e5d;
+  border: 4px solid #012030;
+  opacity: 100%;
 }
 #portfolio h4{
   margin-bottom: 50px;
@@ -79,7 +83,7 @@ button {
   width: 130px;
   height: 40px;
   padding: 10px 25px;
-  border: 2px solid #1abc9c;
+  border: 2px solid #9AEBA3;
   font-family: 'Lato', sans-serif;
   font-weight: 500;
   background: transparent;
@@ -94,7 +98,7 @@ button {
 }
 .btn-3:hover{
   background: transparent;
-  color: #1abc9c;
+  color: #9AEBA3;
 }
 .btn-3 span {
   position: relative;
@@ -108,7 +112,7 @@ button {
   content: "";
   left: 0;
   top: 0;
-  background: #1abc9c;
+  background: #9AEBA3;
   transition: all 0.3s ease;
 }
 .btn-3:before {
@@ -131,7 +135,7 @@ button {
   content: "";
   right: 0;
   bottom: 0;
-  background: #1abc9c;
+  background: #9AEBA3;
   transition: all 0.3s ease;
 }
 .btn-3 span:before {
