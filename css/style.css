@@ -5,7 +5,6 @@
 body{
   font: 20px "Montserrat", sans-serif;
   line-height: 1.8;
-  color: #13678A;
 }
 p{
   font-size: 16px;
@@ -23,21 +22,21 @@ p{
   background-color: #012030;
 }
 .navbar-nav li a, .navbar-brand{color: #bbb !important;}
-.navbar-nav li a:hover, .navbar-brand:hover{color: #9AEBA3 !important;}
+.navbar-nav li a:hover, .navbar-brand:hover{color: #111 !important;}
 
-.bg-1{background-color: #9AEBA3;
-  color: #012030;
+.bg-1{background-color: #f2f2f2;
+  color: #aaa;
 }
-.bg-2{background-color: #012030;
+.bg-2{background-color: #aaa;
   color: #fff;
 }
-.bg-3{background-color: #DAFDBA;
-  color: #012030;
+.bg-3{background-color: #f2f2f2;
+  color: #111;
 }
-.bg-4{background-color: #012030;
+.bg-4{background-color: #ccc;
   color: #fff;
 }
-.bg-5{background-color: #13678A;
+.bg-5{background-color: #aaa;
   color: #fff;
 }
 .container-fluid{
@@ -83,7 +82,7 @@ button {
   width: 130px;
   height: 40px;
   padding: 10px 25px;
-  border: 2px solid #9AEBA3;
+  border: 2px solid #f2f2f2;
   font-family: 'Lato', sans-serif;
   font-weight: 500;
   background: transparent;
@@ -98,7 +97,7 @@ button {
 }
 .btn-3:hover{
   background: transparent;
-  color: #9AEBA3;
+  color: #111;
 }
 .btn-3 span {
   position: relative;
@@ -112,7 +111,7 @@ button {
   content: "";
   left: 0;
   top: 0;
-  background: #9AEBA3;
+  background: #111;
   transition: all 0.3s ease;
 }
 .btn-3:before {
@@ -135,7 +134,7 @@ button {
   content: "";
   right: 0;
   bottom: 0;
-  background: #9AEBA3;
+  background: #111;
   transition: all 0.3s ease;
 }
 .btn-3 span:before {
