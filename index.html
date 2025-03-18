@@ -8,134 +8,144 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/effects.css" rel="stylesheet">
 
 
   <title>portfolio</title>
 
 </head>
 <body>
-  <div class="parent"></div>
-  <div class="child"></div>
+  <div id="browserModeControll">
+
+    <div class="mouse-effect-parent"></div>
+    <div class="mouse-effect-child"></div>
   
-
-  <nav class="navbar navbar-default">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">HOME</a>
+    
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">HOME</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">about</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">tel</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#about">about 자기소개</a></li>
-          <li><a href="#portfolio">Portfolio 포트폴리오</a></li>
-          <li><a href="#contact">tel 연락처</a></li>
-        </ul>
+    </nav>
+  
+    <div class="container-fluid bg-1 text-center">
+  
+      <div class="toggle-btn">
+        <div class="toggle-btn-bg">
+          <div class="half-circle"></div>
+          <div class="half-circle rotate-circle"></div>
+        </div>
+        <div class="focus-circle"></div>
       </div>
+  
+      <h3 class="margin">Youjin Portfolio</h3>
+      <img src="img/profileshot.png" class="img-circle"  alt="새">
+      <h3>신입 개발자 박유진입니다.</h3>
     </div>
-  </nav>
-
-  <div class="container-fluid bg-1 text-center">
-    <h3 class="margin">Youjin Portfolio</h3>
-    <img src="img/profileshot.png" class="img-circle"  alt="새">
-    <h3>신입 개발자 박유진입니다.</h3>
-  </div>
-  <div id="about" class="container-fluid bg-2 text-center">
-    <h3>소개합니다.</h3>
-    <p>정보통신과 졸업, 풀스택 개발자 과정 수강중인 신입 개발자입니다.</p>
-    <!-- class="btn btn-default btn-lg" -->
-    <a href="https://github.com/youjin119" target="_blank">
-      <button class="custom-btn btn-3"><span>My Github</span></button>
-    </a>
-
-  </div>
-
-  <div id="portfolio" class="container-fluid bg-3 text-center">    
-    <h3 class="margin">포트폴리오</h3><br>
-    <div class="row">
-      <h4>Toy Project</h4>
-      <div class="col-sm-4">
-        <p>브랜드 홍보 페이지 1안</p>
-        <a href="https://youjin119.github.io/starbucks1/starbucksPage.html" target="_blank">
-          <img src="img/starbucks1.png" class="img-responsive margin" style="width:100%" alt="Image">
-        </a>
-        <div>
-          html, css, 유튜브 동영상 배경, transition, animation
+    <div id="about" class="container-fluid bg-2 text-center">
+      <h3>소개합니다.</h3>
+      <p>정보통신과 졸업, 풀스택 개발자 과정 수강중인 신입 개발자입니다.</p>
+      <!-- class="btn btn-default btn-lg" -->
+      <a href="https://github.com/youjin119" target="_blank">
+        <button class="custom-btn btn-3"><span>My Github</span></button>
+      </a>
+  
+    </div>
+  
+    <div id="portfolio" class="container-fluid bg-3 text-center">    
+      <h3 class="margin">포트폴리오</h3><br>
+      <div class="row">
+        <h4>Toy Project</h4>
+        <div class="col-sm-4">
+          <p>브랜드 홍보 페이지 1안</p>
+          <a href="https://youjin119.github.io/starbucks1/starbucksPage.html" target="_blank">
+            <img src="img/starbucks1.png" class="img-responsive margin" style="width:100%" alt="Image">
+          </a>
+          <div>
+            html, css, 유튜브 동영상 배경, transition, animation
+          </div>
         </div>
-      </div>
-      <div class="col-sm-4">
-        <p>브랜드 홍보 페이지 팀 우수작</p>
-        <a href="https://youjin119.github.io/starbucks2/" target="_blank">
-          <img src="img/starbucks2.png" class="img-responsive margin" style="width:100%" alt="Image">
-        </a>
-        <div>
-          html, css, mp4 동영상 배경, transition, animation
+        <div class="col-sm-4">
+          <p>브랜드 홍보 페이지 팀 우수작</p>
+          <a href="https://youjin119.github.io/starbucks2/" target="_blank">
+            <img src="img/starbucks2.png" class="img-responsive margin" style="width:100%" alt="Image">
+          </a>
+          <div>
+            html, css, mp4 동영상 배경, transition, animation
+          </div>
         </div>
-      </div>
-      <div class="col-sm-4"> 
-        <p>쿠팡이츠 데모</p>
-        <a href="https://youjin119.github.io/project1/" target="_blank">
-          <img src="img/coupangeats.png" class="img-responsive margin" style="width:100%" alt="Image">
-        </a>
-        <div>
-          html, css, bootstrap, 반응형웹
-        </div>
-        <!-- 모달 ------------------------------------------------------------ -->
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">more</button>
-        <div id="myModal" class="modal fade" role="dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">개발내용</h4>
-            </div>
-            <div class="modal-body">
-              <p>html5, css3을 기반으로 bootstrap을 사용해서 responsive web을 구현했습니다.<br>
-                bootstrap을 사용해서 빠르게 개발할 수 있었고, media query 사용법이 중요하다는 것을 배웠습니다.
-              </p>
-            </div>
-            <div class="modal-footer">
-              <a class="btn btn-default" href="https://youjin119.github.io/project1/" target="_blank">view</a>
+        <div class="col-sm-4"> 
+          <p>쿠팡이츠 데모</p>
+          <a href="https://youjin119.github.io/project1/" target="_blank">
+            <img src="img/coupangeats.png" class="img-responsive margin" style="width:100%" alt="Image">
+          </a>
+          <div>
+            html, css, bootstrap, 반응형웹
+          </div>
+          <!-- 모달 ------------------------------------------------------------ -->
+          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">more</button>
+          <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">개발내용</h4>
+              </div>
+              <div class="modal-body">
+                <p>html5, css3을 기반으로 bootstrap을 사용해서 responsive web을 구현했습니다.<br>
+                  bootstrap을 사용해서 빠르게 개발할 수 있었고, media query 사용법이 중요하다는 것을 배웠습니다.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <a class="btn btn-default" href="https://youjin119.github.io/project1/" target="_blank">view</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="row">
+        <div class="col-sm-4"> 
+          <p>mini project 1</p>
+          <a>
+            <img src="img/kakaoBank.png" class="img-responsive margin" style="width:100%" alt="Image">
+          </a>
+        </div>
+        <div class="col-sm-4"> 
+          <p>mini project 2</p>
+          <img src="img/birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-4"> 
+          <p>final project</p>
+          <img src="img/birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+        
+      </div>
     </div>
-    <div class="row">
-      <div class="col-sm-4"> 
-        <p>mini project 1</p>
-        <a>
-          <img src="img/kakaoBank.png" class="img-responsive margin" style="width:100%" alt="Image">
-        </a>
-      </div>
-      <div class="col-sm-4"> 
-        <p>mini project 2</p>
-        <img src="img/birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-      </div>
-      <div class="col-sm-4"> 
-        <p>final project</p>
-        <img src="img/birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-      </div>
-      
-    </div>
-  </div>
-
-
-  <div id="contact" class="container-fluid bg-5 text-center">
+  
     
-    <h3>연락처</h3>
-    <p>E-mail : youjin3012@naver.com</p>
-    <p>SNS : -</p>
-  </div>
+    <footer class="container-fluid bg-4 text-center">
+      <h3>연락처</h3>
+      <p>E-mail : youjin3012@naver.com</p>
+      &copy; All rights reservd by youjin
+    </footer>
 
-  <footer class="container-fluid bg-4 text-center">
-    &copy; All rights reservd by youjin
-    <!-- <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p> -->
-  </footer>
+    <!-- darkmode 판단 div -->
+  </div> 
 
 
   <script src="js/mouse.js"></script>
+  <script src="js/browserMode.js"></script>
 </body>
 </html>

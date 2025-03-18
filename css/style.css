@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
   font-family: "jeju gothic";
   src: url("font/제주고딕\(윈도우\).ttf");
-}
+} */
 body{
   font: 20px "Montserrat", sans-serif;
   line-height: 1.8;
@@ -19,25 +19,22 @@ p{
   margin-bottom: 0;
   font-size: 12px;
   letter-spacing: 5px;
-  background-color: #012030;
+  background-color: #000957;
 }
 .navbar-nav li a, .navbar-brand{color: #bbb !important;}
-.navbar-nav li a:hover, .navbar-brand:hover{color: #111 !important;}
+.navbar-nav li a:hover, .navbar-brand:hover{color: #FFF2AF !important;}
 
-.bg-1{background-color: #f2f2f2;
-  color: #aaa;
-}
-.bg-2{background-color: #aaa;
-  color: #fff;
-}
-.bg-3{background-color: #f2f2f2;
+.bg-1{background-color: #FFFDF0;
   color: #111;
 }
-.bg-4{background-color: #ccc;
-  color: #fff;
+.bg-2{background-color: #FFF2AF;
+  color: #111;
 }
-.bg-5{background-color: #aaa;
-  color: #fff;
+.bg-3{background-color: #FFFDF0;
+  color: #111;
+}
+.bg-4{background-color: #FFF2AF;
+  color: #000957;
 }
 .container-fluid{
   padding-top: 70px;
@@ -57,7 +54,7 @@ p{
   opacity: 70%;
 }
 #portfolio .col-sm-4 a img:hover{
-  border: 4px solid #012030;
+  border: 4px solid #000957;
   opacity: 100%;
 }
 #portfolio h4{
@@ -72,106 +69,16 @@ p{
 }
 
 
-button {
-  margin: 20px;
-  outline: none;
-  text-decoration: none;
-  color: #fff;
-}
-.custom-btn {
-  width: 130px;
-  height: 40px;
-  padding: 10px 25px;
-  border: 2px solid #f2f2f2;
-  font-family: 'Lato', sans-serif;
-  font-weight: 500;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-}
-.btn-3 {
-  line-height: 39px;
-  padding: 0;
-}
-.btn-3:hover{
-  background: transparent;
-  color: #111;
-}
-.btn-3 span {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.btn-3:before,
-.btn-3:after {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 0;
-  background: #111;
-  transition: all 0.3s ease;
-}
-.btn-3:before {
-  height: 0%;
-  width: 2px;
-}
-.btn-3:after {
-  width: 0%;
-  height: 2px;
-}
-.btn-3:hover:before {
-  height: 100%;
-}
-.btn-3:hover:after {
-  width: 100%;
-}
-.btn-3 span:before,
-.btn-3 span:after {
-  position: absolute;
-  content: "";
-  right: 0;
-  bottom: 0;
-  background: #111;
-  transition: all 0.3s ease;
-}
-.btn-3 span:before {
-  width: 2px;
-  height: 0%;
-}
-.btn-3 span:after {
-  width: 0%;
-  height: 2px;
-}
-.btn-3 span:hover:before {
-  height: 100%;
-}
-.btn-3 span:hover:after {
-  width: 100%;
-}
 
-.parent {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  background-color: rgb(255, 255, 133);
-  clip-path: polygon(50% 0%, 60% 40%, 95% 50%, 60% 60%, 50% 100%, 40% 60%, 5% 50%, 40% 40%);
-  outline: 1px solid transparent;
-  outline-offset: -1px;
-  border-image: linear-gradient(to right, white, red, rgb(54, 54, 2));
-  pointer-events: none; /* 부모 요소는 클릭 불가 */
-  z-index: 1000;
+.mode-dark .bg-1{background-color: #1A1A2E;
+  color: #ddd;
 }
-
-.child {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  background-color: #052daf;
-  clip-path: polygon(50% 0%, 60% 40%, 95% 50%, 60% 60%, 50% 100%, 40% 60%, 5% 50%, 40% 40%);
-  
-  transition: opacity 0.3s ease;
-  z-index: 999;
+.mode-dark .bg-2{background-color: #577BC1;
+  color: #ddd;
+}
+.mode-dark .bg-3{background-color: #1A1A2E;
+  color: #ddd;
+}
+.mode-dark .bg-4{background-color: #577BC1;
+  color: #ddd;
 }

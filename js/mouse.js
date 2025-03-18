@@ -1,5 +1,5 @@
-const parentElement = document.querySelector('.parent');
-const childElement = document.querySelector('.child');
+const parentElement = document.querySelector('.mouse-effect-parent');
+const childElement = document.querySelector('.mouse-effect-child');
 
 let mouseX = 0;
 let mouseY = 0;

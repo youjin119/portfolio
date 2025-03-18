@@ -1,0 +1,169 @@
+button {
+  margin: 20px;
+  outline: none;
+  text-decoration: none;
+  color: #FF9D23;
+}
+.mode-dark button {
+  color: #3A3960;
+}
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #000957;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+.mode-dark .custom-btn {
+  border: 2px solid #FFFF85;
+}
+
+.btn-3 {
+  line-height: 39px;
+  padding: 0;
+}
+.btn-3:hover{
+  background: transparent;
+  color: #000957;
+}
+.mode-dark .btn-3:hover{
+  color: #FFFF85;
+}
+
+.btn-3 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-3:before, .btn-3:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #000957;
+  transition: all 0.3s ease;
+}
+.mode-dark .btn-3:before, .mode-dark .btn-3:after {
+  background-color: #FFFF85;
+}
+
+.btn-3:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-3:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3:hover:before {
+  height: 100%;
+}
+.btn-3:hover:after {
+  width: 100%;
+}
+.btn-3 span:before, .btn-3 span:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #000957;
+  transition: all 0.3s ease;
+}
+.mode-dark .btn-3 span:before, .mode-dark .btn-3 span:after {
+  background-color: #FFFF85;
+}
+
+
+.btn-3 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-3 span:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3 span:hover:before {
+  height: 100%;
+}
+.btn-3 span:hover:after {
+  width: 100%;
+}
+
+.mouse-effect-parent {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #052daf;
+  clip-path: polygon(50% 0%, 60% 40%, 95% 50%, 60% 60%, 50% 100%, 40% 60%, 5% 50%, 40% 40%);
+  
+  pointer-events: none; /* 부모 요소는 클릭 불가 */
+  z-index: 1000;
+}
+.mouse-effect-child {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #FFFF85;
+  clip-path: polygon(50% 0%, 60% 40%, 95% 50%, 60% 60%, 50% 100%, 40% 60%, 5% 50%, 40% 40%);
+  
+  transition: opacity 0.3s ease;
+  z-index: 999;
+}
+.mode-dark .mouse-effect-parent {
+  background-color: #FFFF85;
+}
+.mode-dark .mouse-effect-child {
+  background-color: #052daf;
+}
+
+
+.toggle-btn {
+  position: relative; /* toggle-btn을 기준으로 내부 요소들이 위치하게 함 */
+}
+
+.toggle-btn-bg {
+  position: relative; /* toggle-btn-bg를 기준으로 반원들이 위치하게 함 */
+  z-index: 99;
+}
+
+.half-circle {
+  width: 100px;
+  height: 50px;
+  background-color: #FFFF85;
+  /* background-color: #000957; */
+  border-radius: 50px 50px 0 0; /* 위쪽 반원을 만듦 */
+  clip-path: inset(0% 0% 50% 0%); /* 위쪽 50%만 보이도록 잘라냄 */
+  position: absolute; /* 반원들이 동일한 위치에 놓이도록 설정 */
+}
+
+.rotate-circle {
+  transform: rotate(180deg);
+}
+
+.focus-circle {
+  width: 20px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute; /* 위치를 절대값으로 설정 */
+  top: 5px; /* focus-circle을 첫 번째 반원의 위치에 맞게 설정 */
+  left: 40px; /* 반원의 중심에 오도록 설정 */
+  z-index: 100;
+}
+
+.mode-dark .half-circle {
+  background-color: #577BC1; /* 반원 색상 변경 */
+  /* background-color: rgb(255, 255, 133); */
+}
+
+.mode-dark .focus-circle {
+  background-color: #111; /* 포커스 원 색상 변경 */
+}
