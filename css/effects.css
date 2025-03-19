@@ -158,6 +158,13 @@ button {
   left: 40px; /* 반원의 중심에 오도록 설정 */
   z-index: 100;
 }
+.eye-close-animation-state{
+  /* display: none; */
+  background-color: #FFFDF0;
+  transform: rotateX(180deg);
+  clip-path: inset(0% 0% 60% 0%);
+  top: -5px;
+}
 
 .mode-dark .half-circle {
   background-color: #577BC1; /* 반원 색상 변경 */
@@ -166,4 +173,38 @@ button {
 
 .mode-dark .focus-circle {
   background-color: #111; /* 포커스 원 색상 변경 */
+}
+.mode-dark .eye-close-animation-state{
+  /* display: none; */
+  background-color: #1A1A2E;
+}
+
+@keyframes eye-animation-top {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(90deg);
+  }
+}
+.eye-animation-top {
+  animation: eye-animation-top 1s ease-out;
+}
+
+@keyframes eye-animation-center {
+  0% {
+    clip-path: inset(0% 0% 0% 0%);
+  }
+  20% {
+    clip-path: inset(5% 0% 0% 0%);
+  }
+  /* 50% {
+    clip-path: inset(15% 0% 0% 0%);
+  } */
+  100% {
+    clip-path: inset(50% 0% 0% 0%);
+  }
+}
+.eye-animation-center {
+  animation: eye-animation-center 1s ease-out;
 }
